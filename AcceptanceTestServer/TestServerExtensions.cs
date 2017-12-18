@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace AcceptanceTestServer
 {
-    public static class ServicesTestServerExtensions
+    public static class TestServerExtensions
     {
         public static T GetService<T>(this TestServer testServer) 
         {
