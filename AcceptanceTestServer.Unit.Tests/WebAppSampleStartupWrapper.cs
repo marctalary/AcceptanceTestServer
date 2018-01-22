@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AcceptanceTestServer.Sample
+namespace AcceptanceTestServer.Tests
 {
-    public class WebTestStartupWrapper : WebTest.Startup
+    public class WebAppSampleStartupWrapper : WebAppSample.Startup
     {
-        public WebTestStartupWrapper(IHostingEnvironment hostingEnvironment) : base(hostingEnvironment)
+        public WebAppSampleStartupWrapper(IHostingEnvironment hostingEnvironment) : base(hostingEnvironment)
         {
         }
 

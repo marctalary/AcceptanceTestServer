@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System.Collections;
 
-namespace WebTest
+namespace WebAppSample
 {
     public class Startup
     {

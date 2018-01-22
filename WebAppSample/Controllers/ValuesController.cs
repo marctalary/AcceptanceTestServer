@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebTest.Controllers
+namespace WebAppSample.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
@@ -10,7 +10,7 @@ namespace WebTest.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new [] { "value1", "value2" };
         }
 
         // GET api/values/5

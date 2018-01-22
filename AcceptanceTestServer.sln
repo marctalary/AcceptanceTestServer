@@ -1,11 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTest", "WebTest\WebTest.csproj", "{092547D2-0E65-49EB-91DA-EE9DFDE9CA4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppSample", "WebAppSample\WebAppSample.csproj", "{092547D2-0E65-49EB-91DA-EE9DFDE9CA4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcceptanceTestServer", "AcceptanceTestServer\AcceptanceTestServer.csproj", "{A53E1885-F777-4AD4-A89E-9B2ED10B6DFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcceptanceTestServer", "AcceptanceTestServer\AcceptanceTestServer.csproj", "{A53E1885-F777-4AD4-A89E-9B2ED10B6DFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppSample.Acceptance.Tests", "WebAppSample.Acceptance.Tests\WebAppSample.Acceptance.Tests.csproj", "{0BDD564E-BCBB-418D-8009-816389AE325C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcceptanceTestServer.Tests", "AcceptanceTestServer.Unit.Tests\AcceptanceTestServer.Tests.csproj", "{BEE12C38-9242-4766-85D0-156E6B85044C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE3FF877-B487-476C-B50A-DC46AE9ED8CB}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +30,14 @@ Global
 		{A53E1885-F777-4AD4-A89E-9B2ED10B6DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A53E1885-F777-4AD4-A89E-9B2ED10B6DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A53E1885-F777-4AD4-A89E-9B2ED10B6DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDD564E-BCBB-418D-8009-816389AE325C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDD564E-BCBB-418D-8009-816389AE325C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDD564E-BCBB-418D-8009-816389AE325C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDD564E-BCBB-418D-8009-816389AE325C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE12C38-9242-4766-85D0-156E6B85044C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE12C38-9242-4766-85D0-156E6B85044C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE12C38-9242-4766-85D0-156E6B85044C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE12C38-9242-4766-85D0-156E6B85044C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
