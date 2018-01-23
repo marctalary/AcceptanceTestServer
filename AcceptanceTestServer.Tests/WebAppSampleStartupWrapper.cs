@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace AcceptanceTestServer.Tests
 {
-    public class WebAppSampleStartupWrapper : WebAppSample.Startup
+    internal class WebAppSampleStartupWrapper : WebAppSample.Startup
     {
         public WebAppSampleStartupWrapper(IHostingEnvironment hostingEnvironment) : base(hostingEnvironment)
         {
