@@ -13,7 +13,7 @@ namespace WebAppSample.Acceptance.Tests
         public override void ConfigureServices(IServiceCollection services)
         {
             base.ConfigureServices(services);
-            ServiceReplacer.ReplaceServices(services);
+            services.ReplaceServices();
         }
     }
 }
