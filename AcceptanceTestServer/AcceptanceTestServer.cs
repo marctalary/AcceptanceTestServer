@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using System;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace AcceptanceTestServer
 {
@@ -14,7 +14,7 @@ namespace AcceptanceTestServer
 
             var hostBuilder = new WebHostBuilder()
                 .UseContentRoot(contentRoot)
-                .ConfigureServiceReplacements(replacementServices)
+                .ConfigureServices(cs => cs.AddSingleton(new ServiceReplacer(replacementServices)))
                 .UseStartup<TStartup>();
 
             var testServer = new TestServer(hostBuilder);

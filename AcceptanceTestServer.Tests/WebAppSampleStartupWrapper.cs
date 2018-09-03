@@ -12,7 +12,7 @@ namespace AcceptanceTestServer.Tests
         public override void ConfigureServices(IServiceCollection services)
         {
             base.ConfigureServices(services);
-            ServiceReplacer.ReplaceServices(services);
+            services.ReplaceServices();
         }
     }
 }

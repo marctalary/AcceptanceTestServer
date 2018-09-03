@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Collections;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using System.Collections;
 
 namespace WebAppSample
 {
@@ -29,6 +29,7 @@ namespace WebAppSample
             services.AddMvc();
 
             services.AddTransient<IEnumerable, ArrayList>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

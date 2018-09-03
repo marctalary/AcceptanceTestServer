@@ -9,7 +9,6 @@ namespace AcceptanceTestServer.Tests.Integration
 {
     public class AcceptanceTestServerTests
     {
-        // Assumes the 
         private string ContentRoot => Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "..", "..", "..", "..", typeof(WebAppSample.Startup).Namespace));
 
         [Fact]
